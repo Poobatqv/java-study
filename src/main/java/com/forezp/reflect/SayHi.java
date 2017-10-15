@@ -10,8 +10,9 @@ public class SayHi {
     }
 
 
-    public void sayHi(String name){
+    public String sayHi(String name){
         System.out.println("hi:"+name);
+        return "i'm here";
     }
 
 }
