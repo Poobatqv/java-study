@@ -38,7 +38,7 @@ public class GenUserSql {
             }
             String fieldName = field.getName();
             String getMethodName = "get" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
-            System.out.println("getMethodName:" + getMethodName);
+            //System.out.println("getMethodName:" + getMethodName);
             Method method = c.getMethod(getMethodName);
             Object fieldValue = method.invoke(user);
             if (fieldValue == null || ((fieldValue instanceof Integer) && (Integer) fieldValue == 0)) {

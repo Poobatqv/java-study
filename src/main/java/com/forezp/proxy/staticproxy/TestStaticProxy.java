@@ -11,6 +11,6 @@ public class TestStaticProxy {
     public static void main(String[] args) {
         IBlogService target = new BlogService();
         BlogStaticProxy proxy = new BlogStaticProxy(target);
-        proxy.write();
+        proxy.writeBlog();
     }
 }
